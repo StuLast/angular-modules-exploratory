@@ -2,3 +2,11 @@
   <app-heading-widget>Table Component</app-heading-widget>
   <app-table classNames="striped celled"[data]="data" [headers]="headers"></app-table>
 </div>
+<div class="ui segment">
+  <app-heading-widget>Tabs Component</app-heading-widget>
+  <app-tabs>
+    <a class="item" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['./']" routerLinkActive="active">Biography</a>
+    <a class="item" [routerLink]="['./', 'companies']" routerLinkActive="active">Companies</a>
+    <a class="item" [routerLink]="['./', 'partners']" routerLinkActive="active">Partners</a>
+  </app-tabs>
+</div>
