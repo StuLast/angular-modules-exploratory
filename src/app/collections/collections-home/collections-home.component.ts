@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 
-import { IHeaders, ITableData } from '../table/table.component';
+import { IHeader, ITableRecord } from '../table/table.component';
 
 @Component({
   selector: 'app-collections-home',
@@ -8,7 +8,7 @@ import { IHeaders, ITableData } from '../table/table.component';
   styleUrls: ['./collections-home.component.css']
 })
 export class CollectionsHomeComponent implements OnInit {
- data: ITableData[] = [
+ data: ITableRecord[] = [
     {
       name:'James',
       age: 24,
