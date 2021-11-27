@@ -1,0 +1,11 @@
+<div class="ui segment">
+<app-heading-widget> Modals </app-heading-widget> 
+<button (click)="toggleModal()">Show Modal</button>
+<app-modal *ngIf="modalIsVisible" (close)="toggleModal()">
+  <div modalTitle>Reusable Modal - Title</div>
+  <p>Some content for the modal window should go right here</p>
+  <ng-container modalFooter>
+    <button class="ui button" (click)="toggleModal()"> Close me</button>
+  </ng-container>
+</app-modal>
+</div>
