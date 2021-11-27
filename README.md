@@ -4,6 +4,10 @@ This is a little project that pulls together varios aspects of Semantic UI and i
 
 This web application doesn't do anything useful.  No data is collected, processed or stored by this web application.  All content is static and included in the demo web app.
 
+A preview of this web app can be found at [https://angular-sementic-ui-demo.herokuapp.com/](https://angular-sementic-ui-demo.herokuapp.com/).
+
+
+
 # Angular Stuff...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
