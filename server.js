@@ -6,7 +6,6 @@ function requireHTTPS(req, res, next) {
   next();
 }
 
-const port = process.env.PORT || 8080;
 const express = require('express');
 const app = express();
 app.use(requireHTTPS);
@@ -17,6 +16,4 @@ app.get('/*', function(req, res) {
   res.sendFile('index.html', {root: 'dist/comps-and-mods/'});
 });
 
-app.listen(port, () => {
-  console.log(`listening on port ${port}`);
-});
+app.listen(process.env.PORT || 8080);
