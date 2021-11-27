@@ -16,4 +16,6 @@ app.get('/*', function(req, res) {
   res.sendFile('index.html', {root: 'dist/comps-and-mods/'});
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080, () => {
+  console.log("Server up and running", process.env.PORT);
+});
