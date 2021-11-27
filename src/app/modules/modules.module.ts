@@ -7,8 +7,6 @@ import { SharedModule } from '../shared/shared.module';
 import { ModulesRoutingModule } from './modules-routing,module';
 
 
-
-
 @NgModule({
   declarations: [
     ModalComponent,
