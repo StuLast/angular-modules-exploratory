@@ -6,14 +6,17 @@ function requireHTTPS(req, res, next) {
   next();
 }
 
+const port = process.env.PORT || 8080;
 const express = require('express');
 const app = express();
 app.use(requireHTTPS);
 
-app.use(express.static('./dist/part2-password-generator'));
+app.use(express.static('./dist/comps-and-mods'));
 
 app.get('/*', function(req, res) {
-  res.sendFile('index.html', {root: 'dist/part2-password-generator/'});
+  res.sendFile('index.html', {root: 'dist/comps-and-mods/'});
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(port, () => {
+  console.log(`listening on port ${port}`);
+});
